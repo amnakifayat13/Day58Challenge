@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Day 58 Challenge</title>
+    </head>
+    <body>
+        <script>
+            let user = prompt("Enter user name", '');
+
+            if (user === 'Admin') {
+            
+              let password = prompt('Password?', '');
+            
+              if (password === "abc") {
+                alert( 'Welcome!' );
+              } else if (password === '' || password === null) {
+                alert( 'Canceled' );
+              } else {
+                alert( 'Wrong password' );
+              }
+            
+            } else if (user === '' || user === null) {
+              alert( 'Canceled' );
+            } else {
+              alert( "UnKnown Name" );
+            }
+        </script>
+    </body>
+    </html>
